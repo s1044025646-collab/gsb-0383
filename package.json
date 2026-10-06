@@ -1,0 +1,30 @@
+{
+  "name": "josephus-backend",
+  "version": "1.0.0",
+  "description": "Windows 本地约瑟夫环报数淘汰 API 与 CLI",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "josephus": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "keywords": [
+    "josephus",
+    "typescript",
+    "sqlite",
+    "cli"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
+  }
+}
